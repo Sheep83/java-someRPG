@@ -17,7 +17,7 @@ import java.util.Random;
 public class Game extends Canvas implements Runnable{
 
 	private static final long serialVersionUID = 7436840021209078721L;
-	public static final int WIDTH = 1280, HEIGHT = 1024;
+	public static final int WIDTH = 1366, HEIGHT = 768;
 	private Thread thread;
 	private static BufferedImage faunaSpriteSheet, playerSpriteSheet, wolfSpriteSheet, iconSpriteSheet = null;
 	private BufferedImage background = null;
@@ -62,9 +62,9 @@ public class Game extends Canvas implements Runnable{
 		handler.addDice(d100);
 //		handler.addDice(d10);
 		handler.addObject(new Player(WIDTH/2 - 32, HEIGHT - 384, ID.Player, handler, textures));
-//		handler.addObject(new Monster(WIDTH/2 - 128, 240, ID.Monster, handler, textures, "Wolf", 1));
-//		handler.addObject(new Monster(WIDTH/2 - 256, 128, ID.Fauna, handler, textures, "Rabbit", 2));
-//		handler.addObject(new Monster(WIDTH/2 - 512, 240, ID.Monster, handler, textures, "Wolf", 3));
+		handler.addObject(new Monster(WIDTH/2 - 128, 240, ID.Monster, handler, textures, "Wolf", 1));
+		handler.addObject(new Monster(WIDTH/2 - 256, 384, ID.Fauna, handler, textures, "Rabbit", 2));
+		handler.addObject(new Monster(WIDTH/2 - 512, 240, ID.Monster, handler, textures, "Wolf", 3));
 //		handler.addObject(new InventoryObject(700, 512, ID.Potion, "Potion"));
 		hud = new HUD(handler, textures);
 		levelCount = 1;

@@ -12,7 +12,7 @@ import java.awt.event.KeyAdapter;
 		
 		Game game;
 		Handler handler;
-		public Rectangle playButton = new Rectangle(Game.WIDTH / 2 - 50, 800, 100, 50);
+		public Rectangle playButton = new Rectangle(Game.WIDTH / 2 - 50, 600, 100, 50);
 		private SoundPlayer soundPlayer;
 	
 		

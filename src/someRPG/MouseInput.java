@@ -43,7 +43,7 @@ public class MouseInput extends MouseAdapter{
 		Point point = new Point(mouseX, mouseY);
 		if(Game.gameState == STATE.Menu) {
 		if (mouseX >= Game.WIDTH / 2 - 50 && mouseX <= Game.WIDTH/2 + 50) {
-			if(mouseY >= 800 && mouseY <= 850) {
+			if(mouseY >= 600 && mouseY <= 650) {
 				Game.setState(STATE.Game);
 			}
 		}

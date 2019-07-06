@@ -114,7 +114,7 @@ public class HUD {
 		Graphics2D g2d = (Graphics2D) g;
 		g.setColor(Color.white);
 		//HUD Window
-		g.drawRect(0, 768, 1280, 256);
+		g.drawRect(0, 512, 1366, 256);
 		
 		
 		//Left Window
